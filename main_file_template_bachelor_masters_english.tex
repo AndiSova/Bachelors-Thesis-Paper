@@ -1,0 +1,146 @@
+\documentclass[12pt,a4paper,openany]{book}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{array,amsmath,amsthm,amssymb,graphicx,hyperref,wrapfig,tabularx,mathptmx,anyfontsize,t1enc}
+\graphicspath{ {./images/} }
+\usepackage[left=1.2in,right=1.2in,top=1in,bottom=1in]{geometry}
+%\usepackage[romanian]{babel}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{paralist}
+\usepackage[printonlyused,withpage]{acronym}
+\RequirePackage{hyphenat}
+\usepackage{algorithmic, algorithm}
+\usepackage[inline]{enumitem}
+%\usepackage{...insert other packages here...}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[section]
+\newtheorem{exmp}{Example}[section]
+
+\begin{document}
+\sloppy
+
+\thispagestyle{empty}
+\begin{center}
+\begin{figure}[h!]
+\vspace{-20pt}
+\begin{center}
+\includegraphics[width=100pt]{FMI-03.png}
+\end{center}
+\end{figure}
+
+
+{\large{\bf WEST UNIVERSITY OF TIMI\c SOARA
+
+FACULTY OF MATHEMATICS AND COMPUTER SCIENCE
+
+BACHELOR STUDY PROGRAM:  Computer Science in English }}
+
+\vspace{120pt}
+{\huge {\bf BACHELOR THESIS}}
+
+\vspace{160pt}
+\end{center}
+
+{\large\noindent{\bf SUPERVISOR:
+\hspace{172pt} GRADUATE: }
+
+\noindent Lect. Dr. Mafteiu-Scai Liviu Octavian\hfill 
+\noindent  Șova Dumitru Ștefan Andrei}
+
+\vfill
+\begin{center}
+{\bf TIMI\c SOARA
+
+2022}
+\end{center}
+\newpage
+\thispagestyle{empty}
+\begin{center}
+{\large{\bf WEST UNIVERSITY OF TIMI\c SOARA
+		
+FACULTY OF MATHEMATICS AND COMPUTER SCIENCE
+		
+BACHELOR STUDY PROGRAM:  Computer Science in English}}
+
+\vspace{200pt}
+{\huge {\bf Data Manager }}
+
+\vspace{153pt}
+\end{center}
+
+{\large\noindent{\bf SUPERVISOR:\hfill GRADUATE:}
+
+\noindent Lect. Dr. Mafteiu-Scai Liviu Octavian\hfill
+\noindent Șova Dumitru Ștefan Andrei}
+ 
+
+\vfill
+\begin{center}
+{\bf TIMI\c SOARA
+
+2022}
+\end{center}
+
+\newpage
+\normalsize{}
+
+\section*{Abstract} 
+The addressed problem is comprised of the storage of an Android phone, the proposed thesis comprises an application that proposes a way for its users to save storage space with minimal input. 
+
+The way this app is going to save up on storage space is by looking at specific file types that the user can filter through, as such, the app will ask the user for the required permissions to be able to scan the phone and detect said unnecessary data/ applications. The following options will be available for the user: the ability to delete the cache memory, the option to check if there are currently files/folders in the trash, and an option to empty it if the user wants to or not, the option to delete the leftover data of an application that has been deleted, the option to delete empty folders, archive files, and \ac{APK} files, and the option to check the list of applications of the user and see the last time the user accessed them, with the ability to go to the \ac{app} info and delete/disable them or leave them alone.
+
+Such options represent the more hidden parts of data management, most users being unaware that their storage space is being drained by such files, forgetting about apps that they haven't used in a while, or simply forgetting to empty their trash folders.
+
+Keywords: Android Studio, Kotlin, data, management, cache, cleaning, files, delete, XML, memory.
+\newpage
+\normalsize{}
+
+\section*{Rezumat} 
+Problema abordată constă în memoria unui telefon Android, lucrarea propusă cuprinde o aplicație ce propune utilizatorilor săi o modalitate de-a economisi spațiu de stocare cu un input minim.
+
+Modul în care această aplicație va economisi spațiul de stocare este prin a analiza anumite tipuri de fișiere pe care utilizatorul le poate filtra, și, aplicația îi va cere acestuia permisiunile necesare pentru a putea scana telefonul și pentru a putea detecta respectivele fișiere inutile. Următoarele opțiuni vor fi disponibile pentru utilizatori: posibilitatea de a șterge memoria cache, opțiunea de a verifica dacă există în prezent fișiere/foldere în coșul de gunoi și o opțiune de-al goli dacă utilizatorul dorește sau nu, opțiunea de a șterge datele rămase ale unei aplicați care a fost dezinstalată, opțiunea de a șterge folderele goale, fișierele de arhivă și fișierele \ac{APK} și opțiunea de a verifica lista de aplicații ale utilizatorului și de a vedea ultima dată când acesta le-a accesat, cu posibilitatea de a accesa informațiile \ac{app} și de a le șterge/dezactiva sau de a le lăsa în pace.
+
+Astfel de opțiuni reprezintă părțile mai ascunse ale gestionări datelor, majoritatea utilizatorilor neștiind că spațiul lor de stocare este epuizat de astfel de fișiere, uitând de aplicațiile pe care nu le-au folosit de ceva vreme sau pur și simplu uitând să își golească dosarul de gunoi.
+
+Cuvinte cheie: Android Studio, Kotlin, date, gestionare, cache, curățare, fișiere, ștergere, XML, memorie.
+\newpage
+\normalsize{}
+
+\tableofcontents
+\listoffigures
+
+% inline
+{\noindent \huge \textbf{List of acronyms}\par}
+
+\begin{acronym}
+ \acro{UI}{User Interface}
+ \acro{CPU}{Central processing unit}
+ \acro{OS}{Operating System}
+ \acro{GB}{Gigabytes}
+ \acro{APK}{Android Package}
+ \acro{app}{Application}
+ \acro{MB}{Megabytes}
+ \acro{IDE}{Integrated Development Environment}
+ \acro{NDK}{Android Native Development Kit}
+ \acro{p}{pixels}
+ \acro{API}{Application programming interface}
+ \acro{JSON}{JavaScript Object Notation}
+ \acro{AI}{Artificial Inteligence}
+ \acro{4K}{3840 x 2160 resolution}
+\end{acronym}
+\input{cap1}
+\input{cap3n}
+\input{cap2}
+\input{cap4}
+\input{cap5}
+\input{cap6}
+
+\bibliography{mybib}
+\bibliographystyle{alpha}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\end{document} 
